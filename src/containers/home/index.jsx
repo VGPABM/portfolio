@@ -10,7 +10,7 @@ const Home=()=>{
     const navigate = useNavigate();
     console.log(navigate);
     const handleNavigateToContactMe=()=>{
-        navigate('/contact');
+        navigate('/portfolio/contact');
     }
 
     useEffect(() => {
