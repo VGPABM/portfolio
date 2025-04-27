@@ -19,7 +19,7 @@ function App() {
   console.log(location);
   const [init, setInit] = useState(false);
 
-  const renderParticleJsInHome = location.pathname === "/portfolio/";
+  const renderParticleJsInHome = location.pathname === "/portfolio/" || location.pathname === "/porfolio";
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -48,7 +48,7 @@ function App() {
 
      <div className="App__main-page-content">
      <Routes>
-      <Route path='/portfolio' element={<Home/>}/>
+      <Route path='/portfolio/' element={<Home/>}/>
       <Route path='/portfolio/about' element={<About/>}/>
       <Route path='/portfolio/contact' element={<Contact/>}/>
       <Route path='/portfolio/projects' element={<Projects/>}/>
