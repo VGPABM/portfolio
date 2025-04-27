@@ -19,7 +19,7 @@ function App() {
   console.log(location);
   const [init, setInit] = useState(false);
 
-  const renderParticleJsInHome = location.pathname === "/portfolio";
+  const renderParticleJsInHome = location.pathname === "/portfolio/";
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
