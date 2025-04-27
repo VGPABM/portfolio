@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.57ab6c7e.css",
+    "main.js": "/portfolio/static/js/main.e5500e5e.js",
+    "static/media/robotdogPPE.png": "/portfolio/static/media/robotdogPPE.5616382a93e8fe2c94cc.png",
+    "static/media/robotdogLLM.png": "/portfolio/static/media/robotdogLLM.5cffcae3660461e74915.png",
+    "static/media/blackjack.png": "/portfolio/static/media/blackjack.90f3fd6e32632c55782f.png",
+    "static/media/Folley.png": "/portfolio/static/media/Folley.64130da2fb19fb06971b.png",
+    "static/media/smartlab.png": "/portfolio/static/media/smartlab.249bcf7e9ec6ededd57d.png",
+    "static/media/XSite.png": "/portfolio/static/media/XSite.55d270db5d6c607c69e7.png",
+    "index.html": "/portfolio/index.html",
+    "main.57ab6c7e.css.map": "/portfolio/static/css/main.57ab6c7e.css.map",
+    "main.e5500e5e.js.map": "/portfolio/static/js/main.e5500e5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57ab6c7e.css",
+    "static/js/main.e5500e5e.js"
+  ]
+}
