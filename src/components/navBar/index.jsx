@@ -7,7 +7,7 @@ import "./style.scss";
 const data = [
   {
     label: "Home",
-    to: "/portfolio",
+    to: "/portfolio/",
   },
   {
     label: "About",
@@ -71,7 +71,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to="/portfolio" className="navbar__container__logo">
+          <Link to="/portfolio/" className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
           <div className="nav-icon" onClick={handleToggleIcon}>

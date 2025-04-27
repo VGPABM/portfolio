@@ -1,7 +1,7 @@
 import './App.scss';
 
 import { useEffect, useMemo, useState } from "react";
-import {Routes, Route, useLocation} from 'react-router-dom'
+import {HashRouter,Routes, Route, useLocation} from 'react-router-dom'
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // Use slim for lighter bundle
 import About from './containers/about';
@@ -37,7 +37,8 @@ function App() {
 
 
   return (
-    <div className="App">
+    <HashRouter>
+      <div className="App">
      {/*particles js */}
      {renderParticleJsInHome && init && (<Particles id="particle" particlesLoaded={particlesLoaded}options={particlesOptions}/>) }
 
@@ -61,6 +62,8 @@ function App() {
 
     
     </div>
+    </HashRouter>
+    
   );
 }
 
