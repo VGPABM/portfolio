@@ -10,6 +10,16 @@ import Projects from './containers/projects/index.jsx';
 import Awards from './containers/Awards/index.jsx';
 import Skills from './containers/skills';
 import Contact from './containers/contact';
+import AutonomousCar from './containers/contents/AutonomouscarSim';
+import BlackJack from './containers/contents/Blackjack';
+import CVRobotControl from './containers/contents/Compvisrobotcontrol';
+import DogLLM from './containers/contents/DogLLM';
+import DogDetect from './containers/contents/DogPPEdetect';
+import Folley from './containers/contents/Folley';
+import DigiClock from './containers/contents/SmartDigitalClock';
+import SmartLab from './containers/contents/SmartIoTLab';
+import Xsite from './containers/contents/XSite';
+
 import Navbar from './components/navBar';
 import particlesOptions from "./utils/particles.js"
 
@@ -53,7 +63,16 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/awards' element={<Awards/>}/>
-      <Route path='/skills' element={<Skills/>}/>
+      <Route path='/autonomouscar' element={<AutonomousCar/>}/>
+      <Route path='/arblackjack' element={<BlackJack/>}/>
+      <Route path='/compvisrobot' element={<CVRobotControl/>}/>
+      <Route path='/dogllm' element={<DogLLM/>}/>
+      <Route path='/dogmachinelearning' element={<DogDetect/>}/>
+      <Route path='/folley' element={<Folley/>}/>
+      <Route path='/digitalclock' element={<DigiClock/>}/>
+      <Route path='/smartiotlab' element={<SmartLab/>}/>
+      <Route path='/xsite' element={<Xsite/>}/>
+      {/* <Route path='/skills' element={<Skills/>}/> */}
      </Routes>
      </div>
 

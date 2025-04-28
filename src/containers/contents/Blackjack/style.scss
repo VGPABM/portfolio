@@ -1,0 +1,129 @@
+.project {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+
+    &__section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+
+      &__text {
+        flex: 1;
+        p {
+          font-size: 1.8rem;
+          color: var(--yellow-theme-sub-text-color);
+          line-height: 1.7;
+        }
+      }
+
+      &__image {
+        flex: 1;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 12px;
+          border: 2px solid var(--yellow-theme-main-color);
+          object-fit: cover;
+        }
+      }
+
+      &.project__content__section--reverse {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__onlyImage {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid var(--yellow-theme-main-color);
+        object-fit: cover;
+      }
+    }
+
+    &__onlyText {
+      p {
+        font-size: 1.8rem;
+        color: var(--yellow-theme-sub-text-color);
+        line-height: 1.7;
+      }
+    }
+
+    &__youtube {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+
+      iframe {
+        width: 100%;
+        max-width: 800px; /* Adjust this value as needed */
+        height: auto;
+        aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+        border: 2px solid var(--yellow-theme-main-color);
+        border-radius: 12px;
+      }
+    }
+
+    &__githubLink {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.8rem;
+        color: var(--yellow-theme-main-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--yellow-theme-sub-text-color);
+        }
+
+        svg {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/* Medium Screens (Tablet) */
+@media (max-width: 1024px) {
+  .project__content__section {
+    flex-direction: column;
+
+    &.project__content__section--reverse {
+      flex-direction: column;
+    }
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .project__content {
+    padding: 10px;
+    gap: 20px;
+
+    &__section__text p,
+    &__onlyText p {
+      font-size: 1.5rem;
+    }
+
+    &__githubLink a {
+      font-size: 1.5rem;
+
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

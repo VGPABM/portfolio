@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeader";
 import Blackjack from "../../images/blackjack.png";
@@ -15,37 +16,37 @@ const portofolioData = [
     id: 2,
     name: "AR Black Jack Game",
     image: Blackjack,
-    link: "",
+    link: "/arblackjack",
   },
   {
     id: 3,
     name: "Smart IoT Lab",
     image: smartlab,
-    link: "",
+    link: "/smartiotlab",
   },
   {
     id: 3,
     name: "XSite-V2 : BTS Monitoring",
     image: XSite,
-    link: "",
+    link: "/xsite",
   },
   {
     id: 4,
     name: "Folley : Smart Shopping Cart",
     image: Folley,
-    link: "",
+    link: "/folley",
   },
   {
     id: 4,
     name: "Robot Dog with LLM",
     image: robotdogLLM,
-    link: "",
+    link: "/dogllm",
   },
   {
     id: 4,
-    name: "Robot Dog PPE Detection",
+    name: "Robot Dog ML Detection",
     image: robotdogPPE,
-    link: "",
+    link: "/dogmachinelearning",
   },
 ];
 
@@ -60,7 +61,7 @@ const filterData = [
   },
   {
     filterId: 3,
-    label: "IoT",
+    label: "IoT System",
   },
   {
     filterId: 4,
@@ -84,6 +85,9 @@ const Projects = () => {
   function handleHover(index) {
     setHoverValue(index);
   }
+
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="projects">
       <PageHeaderContent
@@ -120,7 +124,7 @@ const Projects = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <button onClick={() => navigate(item.link)}>Visit</button>
                   </div>
                 )}
               </div>

@@ -13,10 +13,10 @@ const data = [
     label: "About",
     to: "/about",
   },
-  {
-    label: "Skills",
-    to: "/skills",
-  },
+  // {
+  //   label: "Skills",
+  //   to: "/skills",
+  // },
   {
     label: "Awards",
     to: "/awards",
