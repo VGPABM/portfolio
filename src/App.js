@@ -16,10 +16,9 @@ import particlesOptions from "./utils/particles.js"
 function App() {
 
   const  location = useLocation();
-  console.log(location);
   const [init, setInit] = useState(false);
 
-  const renderParticleJsInHome = location.pathname === "/" || location.pathname === "/portfolio";
+  const renderParticleJsInHome = location.pathname === "/" || location.pathname === "";
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -37,6 +36,7 @@ function App() {
 
 
   return (
+    
       <div className="App">
      {/*particles js */}
      {renderParticleJsInHome && init && (<Particles id="particle" particlesLoaded={particlesLoaded}options={particlesOptions}/>) }
@@ -61,6 +61,7 @@ function App() {
 
     
     </div>
+    
     
   );
 }
