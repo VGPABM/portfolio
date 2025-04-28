@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a441fdcc.css",
-    "main.js": "/portfolio/static/js/main.e4b33a1e.js",
+    "main.css": "/portfolio/static/css/main.c069a0e8.css",
+    "main.js": "/portfolio/static/js/main.d7e8a8bf.js",
+    "static/media/BlackjackCover.png": "/portfolio/static/media/BlackjackCover.4d0c0ffe7b840dcabcfd.png",
     "static/media/robotdogPPE.png": "/portfolio/static/media/robotdogPPE.5616382a93e8fe2c94cc.png",
-    "static/media/robotdogLLM.png": "/portfolio/static/media/robotdogLLM.5cffcae3660461e74915.png",
+    "static/media/smartiotlab.png": "/portfolio/static/media/smartiotlab.a4ad499a39e99d25df09.png",
     "static/media/blackjack.png": "/portfolio/static/media/blackjack.90f3fd6e32632c55782f.png",
+    "static/media/robotdogllmcover.png": "/portfolio/static/media/robotdogllmcover.8b602bff7007f2910122.png",
     "static/media/Folley.png": "/portfolio/static/media/Folley.64130da2fb19fb06971b.png",
-    "static/media/smartlab.png": "/portfolio/static/media/smartlab.249bcf7e9ec6ededd57d.png",
     "static/media/FiraAIRcomp.png": "/portfolio/static/media/FiraAIRcomp.d2aea9908aa2e8006cb0.png",
     "static/media/FIRAAIR.jpg": "/portfolio/static/media/FIRAAIR.5fc2649c8bad8ff67f74.jpg",
     "static/media/XSite.png": "/portfolio/static/media/XSite.55d270db5d6c607c69e7.png",
     "static/media/SAFMCD1.jpg": "/portfolio/static/media/SAFMCD1.9f367f9e65be600dc5b7.jpg",
     "static/media/SAFMC23.jpg": "/portfolio/static/media/SAFMC23.4546d42f365282a4bd1e.jpg",
     "index.html": "/portfolio/index.html",
-    "main.a441fdcc.css.map": "/portfolio/static/css/main.a441fdcc.css.map",
-    "main.e4b33a1e.js.map": "/portfolio/static/js/main.e4b33a1e.js.map"
+    "main.c069a0e8.css.map": "/portfolio/static/css/main.c069a0e8.css.map",
+    "main.d7e8a8bf.js.map": "/portfolio/static/js/main.d7e8a8bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.a441fdcc.css",
-    "static/js/main.e4b33a1e.js"
+    "static/css/main.c069a0e8.css",
+    "static/js/main.d7e8a8bf.js"
   ]
 }
