@@ -163,24 +163,24 @@ const About = () => {
         <div className="about__content__servicesWrapper">
           <div className="about__content__servicesWrapper__innerContent">
             <div>
-              <FaMicrochip size={80} color="var(--yellow-theme-main-color)" />
+              <FaMicrochip className="about__icon" color="var(--yellow-theme-main-color)" />
             </div>
 
             <div>
-              <FaLinux size={80} color="var(--yellow-theme-main-color)" />
+              <FaLinux className="about__icon"color="var(--yellow-theme-main-color)" />
             </div>
 
             <div>
-              <FaRssSquare size={80} color="var(--yellow-theme-main-color)" />
+              <FaRssSquare className="about__icon" color="var(--yellow-theme-main-color)" />
             </div>
             <div>
-              <FaRobot size={80} color="var(--yellow-theme-main-color)" />
+              <FaRobot className="about__icon" color="var(--yellow-theme-main-color)" />
             </div>
             <div>
-              <DiPython size={80} color="var(--yellow-theme-main-color)" />
+              <DiPython className="about__icon" color="var(--yellow-theme-main-color)" />
             </div>
             <div>
-              <DiRasberryPi size={80} color="var(--yellow-theme-main-color)" />
+              <DiRasberryPi className="about__icon" color="var(--yellow-theme-main-color)" />
             </div>
           </div>
         </div>
