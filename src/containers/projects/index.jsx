@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeader";
-import Blackjack from "../../images/blackjack.png";
+import Blackjack from "../../images/BlackjackCover.png";
 import Folley from "../../images/Folley.png";
-import robotdogLLM from "../../images/robotdogLLM.png";
-import smartlab from "../../images/smartlab.png";
+import robotdogLLM from "../../images/robotdogllmcover.png";
+import smartlab from "../../images/smartiotlab.png";
 import XSite from "../../images/XSite.png";
 import robotdogPPE from "../../images/robotdogPPE.png";
 
@@ -24,12 +24,12 @@ const portofolioData = [
     image: smartlab,
     link: "/smartiotlab",
   },
-  {
-    id: 3,
-    name: "XSite-V2 : BTS Monitoring",
-    image: XSite,
-    link: "/xsite",
-  },
+  // {
+  //   id: 3,
+  //   name: "XSite-V2 : BTS Monitoring",
+  //   image: XSite,
+  //   link: "/xsite",
+  // },
   {
     id: 4,
     name: "Folley : Smart Shopping Cart",
@@ -42,12 +42,12 @@ const portofolioData = [
     image: robotdogLLM,
     link: "/dogllm",
   },
-  {
-    id: 4,
-    name: "Robot Dog ML Detection",
-    image: robotdogPPE,
-    link: "/dogmachinelearning",
-  },
+  // {
+  //   id: 4,
+  //   name: "Robot Dog ML Detection",
+  //   image: robotdogPPE,
+  //   link: "/dogmachinelearning",
+  // },
 ];
 
 const filterData = [

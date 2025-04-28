@@ -69,7 +69,7 @@ const Home=()=>{
         </h1>
       </div>
 
-      <Animate play duration={1} delay={2.2} start={{transform: 'translateY(550px)'}} end={{transform: 'translateX(0px)'}}>
+      <Animate play duration={1} delay={0.5} start={{transform: 'translateY(550px)'}} end={{transform: 'translateX(0px)'}}>
       <div className="home__contact-me"> 
         <button onClick={handleNavigateToContactMe}>Contact me</button>
       </div>

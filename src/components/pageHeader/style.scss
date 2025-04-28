@@ -1,24 +1,52 @@
-.wrapper{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px dashed var(--yellow-theme-main-color);
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px dashed var(--yellow-theme-main-color);
+  flex-wrap: wrap; // <-- allow wrapping if needed
 
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.2; // better line-height for multiple lines
+    text-transform: capitalize;
+    color: var(--yellow-theme-main-color);
+    flex-grow: 1;
+    word-break: break-word; // allow long words to break if needed
+  }
 
-    h2{
-        font-size: 36px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        line-height: 1rem;
-        text-transform: capitalize;
-        color:var(--yellow-theme-main-color);
-        display: flex;
-        flex-grow: 1;
+  span {
+    svg {
+      color: var(--yellow-theme-main-color);
+      font-size: 36px;
     }
+  }
+}
 
-    span{
-        svg{
-            color:var(--yellow-theme-main-color);
-        }
+/* Responsive tweaks */
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    h2 {
+      font-size: 28px; // smaller font size on tablets and small screens
     }
+    span {
+      svg {
+        font-size: 28px; // match icon size too
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    h2 {
+      font-size: 22px; // even smaller on very small screens
+    }
+    span {
+      svg {
+        font-size: 24px;
+      }
+    }
+  }
 }

@@ -1,88 +1,105 @@
 .home {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__text-wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Center the text for better readability */
 
-    &__text-wrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left; /* Center the text for better readability */
-        
-        h1 {
-            color: var(--yellow-theme-main-color);
-            margin: 0px;
-            font-weight: 500;
-            font-size: 7rem;
-            line-height: 9rem;
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap; /* Prevent text from wrapping */
-            animation: typingEffectAnimation 2s steps(40) 1s forwards; /* Adjust steps based on text length */
-        }
-    
+    h1 {
+      color: var(--yellow-theme-main-color);
+      margin: 0px;
+      font-weight: 500;
+      font-size: 7rem;
+      line-height: 9rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap; /* Prevent text from wrapping */
+      animation: typingEffectAnimation 1s steps(40) 1s forwards; /* Adjust steps based on text length */
     }
+  }
 
-    &__contact-me{
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        button{
-            cursor: pointer;
-            padding: 10px 70px;
-            font-size: 2rem;
-            background: transparent;
-            color: var(--yellow-theme-main-color);
-            border: 1.5px solid var(--yellow-theme-main-color);
-            border-radius: 4px;
-            font-weight: 500;
+  &__contact-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    button {
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--yellow-theme-main-color);
+      border: 1.5px solid var(--yellow-theme-main-color);
+      border-radius: 4px;
+      font-weight: 500;
 
-            &:hover{
-                background: var(--yellow-theme-main-color);
-                color: #000;
-            }
-        }
+      &:hover {
+        background: var(--yellow-theme-main-color);
+        color: #000;
+      }
     }
+  }
 }
-
 
 /* Typing animation for large screens */
 @keyframes typingEffectAnimation {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive typography */
 @media only screen and (max-width: 670px) {
-    .home__text-wrapper h1 {
-        font-size: 3rem;
-        line-height: 5rem;
-        white-space: normal; /* Allow text to break into multiple lines */
-        overflow: visible; /* Make sure text is not cut off */
-        animation: typingEffectAnimation 3s steps(20) 1s forwards; /* Adjust steps for smaller text */
-    }
+  .home__text-wrapper h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+    white-space: normal;
+    overflow: visible;
+    animation: slideUpFadeIn 1s ease-out forwards;
+    width: auto;
+    border-right: none;
+  }
 }
 
 @media only screen and (min-width: 671px) and (max-width: 920px) {
-    .home__text-wrapper h1 {
-        font-size: 4rem;
-        line-height: 6rem;
-        animation: typingEffectAnimation 3s steps(30) 1s forwards; /* Adjust steps for medium text */
-    }
+  .home__text-wrapper h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    white-space: nowrap; /* Keep nowrap */
+    overflow: hidden;
+    animation: slideUpFadeIn 1s ease-out forwards;
+    width: auto;
+    border-right: none;
+  }
 }
 
 @media only screen and (min-width: 921px) and (max-width: 1400px) {
-    .home__text-wrapper h1 {
-        font-size: 5rem;
-        line-height: 7rem;
-        animation: typingEffectAnimation 2.5s steps(40) 1s forwards; /* Adjust steps for larger text */
-    }
+  .home__text-wrapper h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    animation: slideUpFadeIn 1s ease-out forwards;
+    width: auto;
+    border-right: none;
+  }
 }
