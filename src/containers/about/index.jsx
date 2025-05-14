@@ -149,7 +149,7 @@ const About = () => {
               >
                 <h4>{work.position}</h4>
                 <h5>{work.company}</h5>
-                <div className="period">{work.period}</div>
+                <p>{work.period}</p>
                 <ul>
                   {work.tasks.map((task, i) => (
                     <li key={i}>{task}</li>
