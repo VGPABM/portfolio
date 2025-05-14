@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import { FaBars, FaReact } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+import {ReactComponent as MenuIcon} from "../../logo.svg"
 import { Link, useLocation } from "react-router-dom";
 import "./style.scss";
 
@@ -72,7 +73,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <Link to="/" className="navbar__container__logo">
-            <FaReact size={30} />
+            <MenuIcon size={60} />
           </Link>
           <div className="nav-icon" onClick={handleToggleIcon}>
             {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
