@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c069a0e8.css",
-    "main.js": "/portfolio/static/js/main.9d6691a8.js",
+    "main.js": "/portfolio/static/js/main.cc81aa10.js",
     "static/media/BlackjackCover.png": "/portfolio/static/media/BlackjackCover.4d0c0ffe7b840dcabcfd.png",
     "static/media/robotdogPPE.png": "/portfolio/static/media/robotdogPPE.5616382a93e8fe2c94cc.png",
     "static/media/smartiotlab.png": "/portfolio/static/media/smartiotlab.a4ad499a39e99d25df09.png",
@@ -11,14 +11,15 @@
     "static/media/FiraAIRcomp.png": "/portfolio/static/media/FiraAIRcomp.d2aea9908aa2e8006cb0.png",
     "static/media/FIRAAIR.jpg": "/portfolio/static/media/FIRAAIR.5fc2649c8bad8ff67f74.jpg",
     "static/media/XSite.png": "/portfolio/static/media/XSite.55d270db5d6c607c69e7.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.e4e14cd191199378b8c8b60cc419ffef.svg",
     "static/media/SAFMCD1.jpg": "/portfolio/static/media/SAFMCD1.9f367f9e65be600dc5b7.jpg",
     "static/media/SAFMC23.jpg": "/portfolio/static/media/SAFMC23.4546d42f365282a4bd1e.jpg",
     "index.html": "/portfolio/index.html",
     "main.c069a0e8.css.map": "/portfolio/static/css/main.c069a0e8.css.map",
-    "main.9d6691a8.js.map": "/portfolio/static/js/main.9d6691a8.js.map"
+    "main.cc81aa10.js.map": "/portfolio/static/js/main.cc81aa10.js.map"
   },
   "entrypoints": [
     "static/css/main.c069a0e8.css",
-    "static/js/main.9d6691a8.js"
+    "static/js/main.cc81aa10.js"
   ]
 }
